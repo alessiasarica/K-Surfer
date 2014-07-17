@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<knimeNode icon="./default.png" type="Source" xmlns="http://knime.org/node/v2.8" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://knime.org/node/v2.8 http://knime.org/node/v2.8.xsd">
+    <name>FSDDIoverall</name>
+    
+    <shortDescription>
+        FreeSurfer Diffusion Data Import Node "overall"
+    </shortDescription>
+    
+    <fullDescription>
+        <intro>The "FreeSurfer Diffusion Data Import Node overall" provides a graphical user interface to extract anisotropy and diffusivity averaged over an entire pathway, calculated by TRACULA (TRActs Constrained by UnderLying Anatomy), 
+        a FreeSurfer tool for tractography (http://surfer.nmr.mgh.harvard.edu/).
+        The FSDDIoverall node calls the FreeSurfer tool "tractstats2table" that extracts measures, e.g. for tract-based group analysis (http://freesurfer.net/fswiki/FsTutorial/TraculaStatistics).</intro>
+        
+        <tab name="Options">
+            <option name="Select multiple subjects directory">Choose the root directory containing patients' folders.</option>
+ 			<option name="Subjects list">Select one or more subjects of interest.</option>
+        </tab>
+        <tab name="Tracts and Attributes">
+            <option name="Select Tract">Choose one tract of interest for extracting its related measures. </option>
+            <option name="Select Metrics to extract">Choose one or more attributes of interest related to measures averaged over the choosen tract. </option>
+            
+        </tab>
+        <tab name="Advanced Options">
+            <option name="Output folder for temporary files">If "Save temporary files" is checked, the user is able to choose a folder for storing the temporary files. 
+            The temporary files are: (i) the text file that contains the list of path to patients' folders (if "overall" stats is selected); 
+            (ii) the table file created by tractstats2table tool (see http://freesurfer.net/fswiki/FsTutorial/TraculaStatistics for details about the producted output).
+            </option>
+            <option name="Save temporary files">Check box that enables to store temporary files created during the execution of the node.</option>
+        </tab>
+    </fullDescription>
+    
+    <ports>
+        <outPort index="0" name="Diffusion Data Table">This table contains overall diffusion data extracted.</outPort>
+    </ports>    
+    
+</knimeNode>

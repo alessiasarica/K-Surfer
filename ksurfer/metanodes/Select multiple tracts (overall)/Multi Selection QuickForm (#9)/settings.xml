@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+<entry key="factory" type="xstring" value="org.knime.quickform.nodes.in.multiselection.MultiSelectionInputQuickFormInNodeFactory"/>
+<entry key="node-name" type="xstring" value="Multi Selection QuickForm"/>
+<entry key="node-bundle-name" type="xstring" value="KNIME Nodes to create KNIME Quick Forms"/>
+<entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.quickform.nodes"/>
+<entry key="node-bundle-vendor" type="xstring" value="KNIME.com, Zurich, Switzerland"/>
+<config key="factory_settings"/>
+<entry key="node_file" type="xstring" value="settings.xml"/>
+<config key="flow_stack">
+<config key="Variable_0">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="new variable"/>
+<entry key="class" type="xstring" value="STRING"/>
+<entry key="value" type="xstring" value="Left corticospinal tract, Right inferior longitudinal fasciculus, Right uncinate fasciculus, Left cingulum - cingulate gyrus endings"/>
+</config>
+<config key="Variable_1">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="new variable"/>
+<entry key="class" type="xstring" value="STRING"/>
+<entry key="value" type="xstring" value="Left corticospinal tract, Right inferior longitudinal fasciculus, Right uncinate fasciculus, Left cingulum - cingulate gyrus endings"/>
+</config>
+</config>
+<config key="internal_node_subsettings">
+<entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+</config>
+<config key="model">
+<entry key="label" type="xstring" value="Select multiple tracts"/>
+<entry key="description" type="xstring" value=""/>
+<entry key="variableName" type="xstring" value="new variable"/>
+<entry key="weight" type="xint" value="1"/>
+<entry key="hide_in_wizard" type="xboolean" value="false"/>
+<config key="value">
+<config key="values">
+<entry key="array-size" type="xint" value="0"/>
+</config>
+</config>
+<config key="choices">
+<entry key="array-size" type="xint" value="18"/>
+<entry key="0" type="xstring" value="Left corticospinal tract"/>
+<entry key="1" type="xstring" value="Right corticospinal tract"/>
+<entry key="2" type="xstring" value="Left inferior longitudinal fasciculus"/>
+<entry key="3" type="xstring" value="Right inferior longitudinal fasciculus"/>
+<entry key="4" type="xstring" value="Left uncinate fasciculus"/>
+<entry key="5" type="xstring" value="Right uncinate fasciculus"/>
+<entry key="6" type="xstring" value="Corpus callosum - forceps major"/>
+<entry key="7" type="xstring" value="Corpus callosum - forceps minor"/>
+<entry key="8" type="xstring" value="Left anterior thalamic radiations"/>
+<entry key="9" type="xstring" value="Right anterior thalamic radiations"/>
+<entry key="10" type="xstring" value="Left cingulum - cingulate gyrus endings"/>
+<entry key="11" type="xstring" value="Right cingulum - cingulate gyrus endings"/>
+<entry key="12" type="xstring" value="Left cingulum - angular bundle"/>
+<entry key="13" type="xstring" value="Right cingulum - angular bundle"/>
+<entry key="14" type="xstring" value="Left superior longitudinal fasciculus - parietal endings"/>
+<entry key="15" type="xstring" value="Right superior longitudinal fasciculus - parietal endings"/>
+<entry key="16" type="xstring" value="Left superior longitudinal fasciculus - temporal endings"/>
+<entry key="17" type="xstring" value="Right superior longitudinal fasciculus - temporal endings"/>
+</config>
+<entry key="columnName" type="xstring" value="Tract"/>
+<entry key="smallGui" type="xboolean" value="false"/>
+</config>
+<config key="nodeAnnotation">
+<entry key="text" type="xstring" value="Tracts List"/>
+<entry key="bgcolor" type="xint" value="16777215"/>
+<entry key="x-coordinate" type="xint" value="-5"/>
+<entry key="y-coordinate" type="xint" value="357"/>
+<entry key="width" type="xint" value="120"/>
+<entry key="height" type="xint" value="13"/>
+<entry key="alignment" type="xstring" value="CENTER"/>
+<config key="styles"/>
+</config>
+<entry key="customDescription" type="xstring" isnull="true" value=""/>
+<entry key="state" type="xstring" value="EXECUTED"/>
+<entry key="name" type="xstring" value="Multi Selection QuickForm"/>
+<entry key="hasContent" type="xboolean" value="true"/>
+<entry key="isInactive" type="xboolean" value="false"/>
+<config key="ports">
+<config key="port_1">
+<entry key="index" type="xint" value="1"/>
+<entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
+<entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+<entry key="port_object_summary" type="xstring" value="Rows: 4, Cols: 1"/>
+<entry key="port_dir_location" type="xstring" value="port_1"/>
+</config>
+</config>
+<config key="filestores">
+<entry key="file_store_location" type="xstring" isnull="true" value=""/>
+<entry key="file_store_id" type="xstring" value="3cd17141-39b9-42b3-951d-c156d0f5e098"/>
+</config>
+</config>

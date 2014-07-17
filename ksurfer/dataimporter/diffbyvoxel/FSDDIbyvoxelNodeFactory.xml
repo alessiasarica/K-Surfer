@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<knimeNode icon="./default.png" type="Source" xmlns="http://knime.org/node/v2.8" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://knime.org/node/v2.8 http://knime.org/node/v2.8.xsd">
+    <name>FSDDIbyvoxel</name>
+    
+    <shortDescription>
+        FreeSurfer Diffusion Data Import Node "by voxel"
+    </shortDescription>
+    
+    <fullDescription>
+        <intro>The "FreeSurfer Diffusion Data Import Node by voxel" provides a graphical user interface to extract measures as a function of position along the trajectory of the pathway, calculated by TRACULA (TRActs Constrained by UnderLying Anatomy),
+         a FreeSurfer tool for tractography (http://surfer.nmr.mgh.harvard.edu/). The FSDDIoverall node calls the FreeSurfer tool "tractstats2table" that extracts measures, e.g. for tract-based group analysis (http://freesurfer.net/fswiki/FsTutorial/TraculaStatistics). </intro>
+        
+        <tab name="Options">
+            <option name="Select single subject directory">Choose the root directory containing single patient's folders.</option>
+ 
+        </tab>
+        <tab name="Tracts and Metrics">
+            <option name="Select Tract">Choose one tract of interest for extracting its related measures. </option>
+            <option name="Select Metrics to extract">Choose one metric of interest related to measures as a function of location along the trajectory of the choosen tract.</option>
+            
+        </tab>
+        <tab name="Advanced Options">
+            <option name="Output folder for temporary files">If "Save temporary files" is checked, the user is able to choose a folder for storing the temporary files. 
+            The temporary files are: (i) the text file that contains the list of path to patients' folders (if "overall" stats is selected); 
+            (ii) the table file created by tractstats2table tool (see http://freesurfer.net/fswiki/FsTutorial/TraculaStatistics for details about the producted output).
+            </option>
+            <option name="Save temporary files">Check box that enables to store temporary files created during the execution of the node.</option>
+        </tab>
+    </fullDescription>
+    
+    <ports>
+        <outPort index="0" name="Diffusion Data Table">This table contains by voxel diffusion data extracted.</outPort>
+    </ports>    
+    
+</knimeNode>

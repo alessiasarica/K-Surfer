@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<knimeNode icon="./default.png" type="Source" xmlns="http://knime.org/node/v2.8" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://knime.org/node/v2.8 http://knime.org/node/v2.8.xsd">
+    <name>FSVDI</name>
+    
+    <shortDescription>
+        FreeSurfer Volume Data Import Node
+    </shortDescription>
+    
+    <fullDescription>
+        <intro>The "FreeSurfer Volume Data Import Node" provides a graphical user interface to extract the volumes [mm3] of specific structures, calculated during the normal FreeSurfer processing stream, 
+        via the recon-all script (http://surfer.nmr.mgh.harvard.edu/).
+        The FSVDI node calls the FreeSurfer tool "asegstats2table" (http://freesurfer.net/fswiki/asegstats2table) that extracts the statistical output from the subcortical segmentation, e.g. for volumetric group analysis
+         (http://freesurfer.net/fswiki/FsTutorial/VolumetricGroupAnalysis).</intro>
+        
+        <tab name="Options">
+            <option name="Select multiple subjects directory">Choose the root directory containing patients' folders.</option>
+            <option name="Subjects list">Select one or more subjects of interest.</option>
+ 		 </tab>
+ 
+        <tab name="Advanced Options">
+            <option name="Output folder for temporary files">If "Save temporary files" is checked, the user is able to choose a folder for storing the temporary files. 
+            The temporary files are: (i) the text file that contains the list of path to patients' folders (if "overall" stats is selected); 
+            (ii) the table file created by tractstats2table tool (see http://freesurfer.net/fswiki/FsTutorial/TraculaStatistics for details about the producted output).
+            </option>
+            <option name="Save temporary files">Check box that enables to store temporary files created during the execution of the node.</option>
+        </tab>
+    </fullDescription>
+    
+    <ports>
+        <outPort index="0" name="Volume Data Table">This table contains volume data extracted.</outPort>
+    </ports>    
+   
+</knimeNode>

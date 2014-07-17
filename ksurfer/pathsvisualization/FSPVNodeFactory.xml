@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<knimeNode icon="./default.png" type="Other" xmlns="http://knime.org/node/v2.8" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://knime.org/node/v2.8 http://knime.org/node/v2.8.xsd">
+    <name>FSPV</name>
+    
+    <shortDescription>
+        FreeSurfer Pathways Viewer Node
+    </shortDescription>
+    
+    <fullDescription>
+        <intro>The "FreeSurfer Pathways Viewer Node" provides a graphical user interface to visualize the probability distribution of single white-matter pathways 
+        or all white-matter pathways simultaneously, calculated by TRACULA (TRActs Constrained by UnderLying Anatomy), 
+        a FreeSurfer tool for tractography. (http://surfer.nmr.mgh.harvard.edu/).
+        The FSPV node calls the FreeSurfer tool "freeview" adding, for each chosen tract, default values for visualization: colormap=jet, isosurface=0,0, color='Red'.
+        </intro>
+        
+        <tab name="Options">
+            <option name="Select subject directory">Choose the root directory containing single patient's folders.</option>
+            <option name="Select one or more Tracts">Choose one or more tracts to visualize its/their probability distributions.</option>
+        </tab>
+    </fullDescription>
+    <ports>
+        <outPort index="0" name="3D Visualization">No output.</outPort>
+    </ports>    
+</knimeNode>
